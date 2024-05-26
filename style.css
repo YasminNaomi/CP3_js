@@ -125,3 +125,22 @@ textarea, select{
     margin: 10px 10px 10px;
 
 }
+
+#icon_post{
+    width: 18px;
+    margin-right: 5px;
+    margin-top: 1px;
+    margin-bottom: -3px;
+}
+
+#icon_edit{
+    width: 15px;
+    margin-right: 5px;
+    margin-bottom: -3px;
+}
+
+#icon_delet{
+    width: 13px;
+    margin-right: 5px;
+    margin-bottom: -3px;
+}
