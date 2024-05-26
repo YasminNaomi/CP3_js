@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini rede Socisl</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="./images/compartilhado.png" alt="logo" id="img_header">
+        <h1> Mini Rede Social</h1>
+    </header>
+    <section>  
+        <form id="form">
+            <div class="form_group">
+                <label for="post">
+                    <img src="./images/pngwing.com.png" alt="icone de postagem" id="image_post">Digite seu post
+                </label>
+                <textarea name="post" id="post" placeholder="Seu pensamento aqui..."></textarea>
+            </div>
+
+            <div class="form_group">
+                <label for="categoria">
+                    <img src="./images/simbolo-de-lista-de-tres-itens-com-pontos.png" alt="icone categoria" id="image2_post">Categoria</label>
+                <select name="categoria" id="categoria">
+                    <option value="">Todos</option>
+                    <option value="Noticias">Noticias</option>
+                    <option value="Dicas">Dicas</option>
+                    <option value="Eventos">Eventos</option>
+                </select>
+            </div>
+
+            <button type="submit" id="submit_button">Postar</button>
+        </form>
+    </section> 
+
+    <div id="filter-container">
+            <label for="filtro-categoria">Filtrar por categoria:</label>
+            <select id="filtro-categoria">
+                <option value="Todos">Todos</option>
+                <option value="Noticias">Notícias</option>
+                <option value="Dicas">Dicas</option>
+                <option value="Eventos">Eventos</option>
+            </select>
+    </div>
+
+    <div id="post_container"></div>
+
+    <template id="post-template">
+        <div class="post">
+            <p class="post_text"></p>
+            <p class="category"></p>
+            <p class="date"></p>
+            <div class="post-actions">
+                <button class="edit">Editar</button>
+                <button class="delete">Apagar</button>
+            </div>
+        </div>
+    </template>
+
+</body>
+</html>
